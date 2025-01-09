@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign up for updates and services at our car repair garage.">
+    <meta name="keywords" content="car repair, signup, register, auto repair, customer form">
+    <title>Sign Up - Car Repair Garage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Car Repair Garage</h1>
+            <p>Your trusted auto repair specialists</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="signup.html" class="active">Sign Up</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="signup">
+            <h2>Sign Up</h2>
+            <p>Join our mailing list or book an appointment with ease!</p>
+            <form action="#" method="post" class="signup-form">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Interested In:</label>
+                    <select id="service" name="service">
+                        <option value="general-repair">General Repair</option>
+                        <option value="oil-change">Oil Change</option>
+                        <option value="tire-replacement">Tire Replacement</option>
+                        <option value="inspection">Vehicle Inspection</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Additional Information:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Let us know how we can help"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Car Repair Garage. All rights reserved.</p>
+            <p>123 Main Street, Anytown, USA</p>
+            <p>Email: contact@carrepairgarage.com | Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+</body>
+</html>
