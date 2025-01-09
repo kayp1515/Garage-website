@@ -14,6 +14,13 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #e3d3d3;
+}
 /*header logo*/
 
 header .logo h1 {
@@ -61,8 +68,25 @@ main {
     height:600px;
     width: 100%;
     background: url("../images/back-image.jpg") no-repeat center center/cover;
-
+    position: relative;
 }
+
+#cover-text {
+    /* Final rgba value sets the opacity so it is semi-transparent */
+    background-color: rgba(241, 109, 107, .7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+#cover-text > h2, #cover-text > h3 {
+    color: #ffffff;
+}
+
 
 #services {
     margin-bottom: 40px;
