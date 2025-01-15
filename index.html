@@ -1,87 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Professional car repair garage providing quality service for all makes and models."
-    />
-    <meta
-      name="keywords"
-      content="car repair, garage, mechanic, auto repair, vehicle service"
-    />
-    <title>Car Repair Garage</title>
-
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <!--stylesheet-->
-    <link rel="stylesheet" href="assets/css/style.css"
-   
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Garage</title>
+ <!-- Favicon -->
+ <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="icon" href="favicon.ico" type="assets/favicon/android-chrome-192x192.png"> 
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background: url('assets/images/back-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2rem;
+            text-shadow: 2px 2px 4px #000;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
     <header>
-      <div class="logo">
-        <h1>Ali Car Repair Garage</h1>
-        <p>Your trusted auto repair specialists</p>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+        <h1>Welcome to Our Car Garage</h1>
     </header>
-<!--main content-->
-    <main>
-      <section id="back-image">
-        <div id="cover text"></div>
-
-        <h1>Vehicle Diagnostics and Fault Repair</h1>
-        <h3>With quality time considered</h3>
-      </section>
-      <section id="services">
-        <h2>Our Services</h2>
-        <div class="service-list">
-          <div class="service">
-            <h3>Oil Change</h3>
-            <p>
-              Quick and efficient oil changes to keep your engine running
-              smoothly.
-            </p>
-          </div>
-          <div class="service">
-            <h3>Brake Repair</h3>
-            <p>Expert brake repair services for your safety on the road.</p>
-          </div>
-          <div class="service">
-            <h3>Engine Diagnostics</h3>
-            <p>Advanced diagnostics to identify and fix engine problems.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="about">
+    
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="signup.html">Signup</a> <!-- Link to signup.html -->
+  </nav>
+  
+    <section class="hero">
+        <p>Your Trusted Partner for Vehicle Care</p>
+    </section>
+    <section id="about" class="container">
         <h2>About Us</h2>
-        <p>
-          At Ali Car Repair Garage, we pride ourselves on delivering top-quality
-          service for all makes and models. With over 20 years of experience,
-          our team of skilled mechanics is dedicated to keeping your vehicle in
-          perfect condition.
-        </p>
-      </section>
-    </main>
-
+        <p>We are a trusted car garage offering top-notch services to keep your vehicles running smoothly. With a team of skilled mechanics, we ensure quality and reliability in every service.</p>
+    </section>
+    <section id="services" class="container">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Oil Changes</li>
+            <li>Tire Rotation</li>
+            <li>Brake Repair</li>
+            <li>Engine Diagnostics</li>
+        </ul>
+    </section>
+    <section id="gallery" class="container">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="assets/images/car image 2.jpg" alt="Car 2">
+            <img src="assets/images/car image 4.jpg" alt="Car 4">
+            <img src="assets/images/car image1.jpg" alt="Car 1">
+            <img src="assets/images/car image3.jpg" alt="Car 3">
+            
+        </div>
+    </section>
     <footer>
-      <div class="footer-content">
-        <p>&copy; 2025 Car Repair Garage. All rights reserved.</p>
-        <p>123 Main Street, London, UK</p>
-        <p>Email: contact@carrepairgarage.com | Phone: (+44) 456-7890</p>
-      </div>
+        <p>&copy; 2025 Car Garage. All Rights Reserved.</p>
     </footer>
-  </body>
+</body>
 </html>

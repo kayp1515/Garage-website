@@ -3,68 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sign up for updates and services at our car repair garage.">
-    <meta name="keywords" content="car repair, signup, register, auto repair, customer form">
-    <title>Sign Up - Car Repair Garage</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Signup</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to shared CSS -->
+    <style>
+        /* Inline styles for signup form */
+        .signup-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .signup-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .signup-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .signup-container input {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .signup-container button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .signup-container button:hover {
+            background-color: #555;
+        }
+
+        .signup-container .login-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .signup-container .login-link a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .signup-container .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>Car Repair Garage</h1>
-            <p>Your trusted auto repair specialists</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="signup.html" class="active">Sign Up</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Signup</h1>
     </header>
-
-    <main>
-        <section id="signup">
-            <h2>Sign Up</h2>
-            <p>Join our mailing list or book an appointment with ease!</p>
-            <form action="#" method="post" class="signup-form">
-                <div class="form-group">
-                    <label for="name">Full Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
-                </div>
-                <div class="form-group">
-                    <label for="service">Service Interested In:</label>
-                    <select id="service" name="service">
-                        <option value="general-repair">General Repair</option>
-                        <option value="oil-change">Oil Change</option>
-                        <option value="tire-replacement">Tire Replacement</option>
-                        <option value="inspection">Vehicle Inspection</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="message">Additional Information:</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Let us know how we can help"></textarea>
-                </div>
-                <button type="submit" class="btn-submit">Submit</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 Car Repair Garage. All rights reserved.</p>
-            <p>123 Main Street, Anytown, USA</p>
-            <p>Email: contact@carrepairgarage.com | Phone: (123) 456-7890</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="signup.html">Signup</a>
+    </nav>
+    <div class="signup-container">
+        <h2>Create an Account</h2>
+        <form action="/submit_signup" method="POST">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            <button type="submit">Signup</button>
+        </form>
+        <div class="login-link">
+            Already have an account? <a href="login.html">Login</a>
         </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Car Garage. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
